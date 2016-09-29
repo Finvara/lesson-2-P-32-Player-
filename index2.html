@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Саунтреки</title>
+            <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/zoomsl-3.0.min.js"></script>
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+    <body>
+    <script>
+jQuery(function(){
+
+    if(!$.fn.imagezoomsl){
+    
+        $('.msg').show();
+        return;
+    }
+     else $('.msg').hide();
+
+     
+    
+    $('.my-foto').imagezoomsl({ 
+
+          innerzoommagnifier: true,
+          classmagnifier: window.external ? window.navigator.vendor === 'Yandex' ? "" : 'round-loope' : "", 
+          magnifierborder: "5px solid #F0F0F0",                          
+          zoomrange: [2, 8],
+          zoomstart: 4,
+          magnifiersize: [150, 150] 
+    });  
+});
+</script>
+
+<style>
+.round-loope{
+   border-radius: 75px;
+   border: 5px solid #F0F0F0;
+}
+</style>
+<br><br>
+
+<tr>
+        <div id="show">
+
+        
+            <img src="images/1.jpg" alt="Image 1" align="top">
+
+        </div>
+        
+
+        <div id="gallery">
+        <div style="text-align:center;">
+        <a>Музикальна сторінка</a>
+
+            <ul>
+
+                <li>
+  
+    <td width="40%">&nbsp;</td><td>
+        <p><img class="my-foto" src="images/1.jpg" data-large="images/1.jpg" alt="Assassins Creed OST – Assassins"></p>
+    <link rel="stylesheet" type="text/css" href="player.css">
+      <p>Assassins Creed OST</p>
+        <div class="box-for-audio-track">
+            <audio src="player/Assassins Creed OST – Assassins.mp3" controls></audio>
+            
+ </li>
+<li>
+    <td width="40%">&nbsp;</td><td>
+                <p><img class="my-foto" src="images/2.jpg" data-large="images/2.jpg" alt="Metal Gear Rising Revengeance OST"></p>
+    <link rel="stylesheet" type="text/css" href="player.css">
+      <p>Metal Gear Rising Revengeance OST</p>
+        <div class="box-for-audio-track">
+            <audio src="player/Metal Gear Rising Revengeance OST.mp3" controls></audio>
+
+           
+
+               </li>
+               <li>
+    <td width="40%">&nbsp;</td><td>
+                <p><img class="my-foto" src="images/3.jpg" data-large="images/3.jpg" alt="Asura's Wrath"></p>
+    <link rel="stylesheet" type="text/css" href="player.css">
+      <p>Asura's Wrath</p>
+        <div class="box-for-audio-track">
+            <audio src="player/Asura's Wrath.mp3" controls></audio>
+
+           
+
+               </li>
+               <li>
+    <td width="40%">&nbsp;</td><td>
+                <p><img class="my-foto" src="images/4.jpg" data-large="images/4.jpg" alt="Dishonored 2"></p>
+    <link rel="stylesheet" type="text/css" href="player.css">
+      <p>Dishonored 2</p>
+        <div class="box-for-audio-track">
+            <audio src="player/Dishonored 2.mp3" controls></audio>
+
+           
+
+               </li>
+               <li>
+    <td width="40%">&nbsp;</td><td>
+                <p><img class="my-foto" src="images/5.jpg" data-large="images/5.jpg" alt="DOOM 4"></p>
+    <link rel="stylesheet" type="text/css" href="player.css">
+      <p>DOOM 4</p>
+        <div class="box-for-audio-track">
+            <audio src="player/DOOM 4.mp3" controls></audio>
+
+           
+
+               </li>
+               <li>
+    <td width="40%">&nbsp;</td><td>
+                <p><img class="my-foto" src="images/6.jpg" data-large="images/6.jpg" alt="Final Fantasy XV"></p>
+    <link rel="stylesheet" type="text/css" href="player.css">
+      <p>Final Fantasy XV</p>
+        <div class="box-for-audio-track">
+            <audio src="player/Final Fantasy XV.mp3" controls></audio>
+
+           
+
+               </li>
+            
+            </ul>
+        </div>
+</script>
+        <script src="main.js"></script>
+        </tr></table>
+    </body>
+</html>
